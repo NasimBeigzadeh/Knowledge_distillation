@@ -136,25 +136,6 @@ The temperature parameter is set to:
 
 **T = 2.0**
 
-The combined objective is defined as:
-
-$$
-\mathcal{L}_{KD}
-=
-\alpha T^2
-D_{KL}
-\left(
-softmax\left(\frac{z_T}{T}\right)
-\parallel
-softmax\left(\frac{z_S}{T}\right)
-\right)
-+
-(1-\alpha)
-\mathcal{L}_{CE}
-$$
-
-where $z_T$ and $z_S$ denote the teacher and student logits, respectively.
-
 ---
 
 ## Experimental Setup
@@ -238,56 +219,6 @@ $$
 ### AUROC
 
 AUROC represents the area under the Receiver Operating Characteristic (ROC) curve and measures the ability of the model to distinguish between different diagnostic classes across classification thresholds.
-
----
-
-## Reproducibility
-
-To evaluate the stability and reproducibility of the proposed **T-CST** model, the experiments were independently repeated **five times using the same experimental protocol**.
-
-The results of the five runs were summarized using the performance of each individual run together with the **mean and standard deviation** of the evaluation metrics.
-
-The relatively small standard deviations indicate stable convergence and consistent classification performance across independent runs.
-
----
-
-## Repository Structure
-
-```text
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── src/
-│   ├── models/
-│   │   ├── teacher.py
-│   │   └── student.py
-│   │
-│   ├── losses/
-│   │   └── knowledge_distillation.py
-│   │
-│   ├── evaluation/
-│   │   ├── metrics.py
-│   │   └── evaluate.py
-│   │
-│   ├── training/
-│   │   └── train_kd.py
-│   │
-│   └── preprocessing/
-│       ├── load_raw_data.py
-│       ├── windowing.py
-│       ├── aggregate_diagnostic.py
-│       └── split_data.py
-│
-├── configs/
-│   └── config.yaml
-│
-├── results/
-│   └── README.md
-│
-└── figures/
-    └── figure4.png
-```
 
 ---
 
