@@ -90,7 +90,7 @@ For the test set:
 
 For the validation set, a **50% overlap** was applied to all classes.
 
-<p align="center"> <img src="The number of samples for each class in the PTB-XL dataset before and after windowing.png" alt="The number of samples for each class in the PTB-XL dataset before and after windowing." width="900"> </p>
+<p align="center"> <img src="The number of samples for each class in the PTB-XL dataset before and after windowing..png" alt="The number of samples for each class in the PTB-XL dataset before and after windowing." width="900"> </p>
 
 Figure 5. The number of samples for each class in the PTB-XL dataset before and after windowing.
 
