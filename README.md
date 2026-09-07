@@ -17,7 +17,7 @@ A forward lead-selection strategy is also employed to identify informative ECG l
 Experiments on the **PTB-XL** dataset demonstrate that the student model can achieve performance close to the teacher while substantially reducing computational requirements. In particular, the proposed approach achieves approximately **63× reduction in computational cost** while using a reduced number of ECG leads.
 
 <p align="center">
-  <img src="figures/figure4.png"
+  <img src="T-CST and S-CS networks with knowledge distillation.png"
        alt="T-CST and S-CS networks with knowledge distillation"
        width="900">
 </p>
